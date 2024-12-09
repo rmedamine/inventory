@@ -26,7 +26,7 @@ func main() {
 	r.Static("/static", "./static")
 	r.LoadHTMLGlob("assets/templates/*")
 
-	r.GET("/", func(c *gin.Context) {
+	r.GET("/login", func(c *gin.Context) {
 		c.HTML(200, "login.html", nil)
 	})
 
@@ -51,7 +51,6 @@ func main() {
 		c.JSON(200, gin.H{
 			"message": "Login successful",
 			"role": role,
-			"redirect": "/home",
 		})
 	})
 

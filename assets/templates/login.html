@@ -47,8 +47,10 @@
                     return;
                 }
                 
-                // Redirect or handle successful login
-                window.location.href = '/dashboard';  // You'll need to create this route
+                // Si la connexion est réussie, rediriger vers /home
+                if (response.ok) {
+                    window.location.href = '/home';
+                }
             } catch (error) {
                 document.getElementById('errorMessage').textContent = 'An error occurred. Please try again.';
             }
