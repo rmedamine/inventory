@@ -1,0 +1,192 @@
+/* styles.css */
+
+/* Réinitialisation des marges et des paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Styles généraux du body */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Conteneur pour centrer le formulaire */
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+/* Boîte contenant le formulaire */
+.login-box {
+    background: white;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Titre du formulaire */
+.login-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.login-title {
+    color: #2d3748;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.login-subtitle {
+    color: #718096;
+    font-size: 14px;
+}
+
+/* Formulaire */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Styles pour chaque champ de formulaire */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.form-group label {
+    color: #4a5568;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    padding: 12px 16px;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: #4299e1;
+    box-shadow: 0 0 0 3px rgba(66, 153, 225, 0.1);
+}
+
+.form-error {
+    color: #e53e3e;
+    font-size: 14px;
+    text-align: center;
+    min-height: 20px;
+}
+
+/* Bouton de soumission */
+.btn-login {
+    background: #4299e1;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-login:hover {
+    background: #3182ce;
+    transform: translateY(-1px);
+}
+
+.btn-login:active {
+    transform: translateY(0);
+}
+
+/* Pour des liens comme l'inscription ou d'autres éléments */
+.signup-link {
+    margin-top: 20px;
+    font-size: 14px;
+    color: #777;
+}
+
+.signup-link a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.signup-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 480px) {
+    .login-container {
+        padding: 10px;
+    }
+    
+    .login-box {
+        padding: 30px 20px;
+    }
+    
+    .login-title {
+        font-size: 24px;
+    }
+}
+
+.home-container {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.home-header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.home-header h1 {
+    color: #2d3748;
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.home-header p {
+    color: #718096;
+    font-size: 16px;
+}
+
+.home-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+.btn-logout {
+    background: #e53e3e;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn-logout:hover {
+    background: #c53030;
+    transform: translateY(-1px);
+}
